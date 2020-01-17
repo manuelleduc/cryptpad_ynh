@@ -35,8 +35,7 @@ final_path=$(ynh_app_setting_get $app final_path)
 # BACKUP APP MAIN DIR
 #=================================================
 
-CHECK_SIZE "$final_path"
-ynh_backup "$final_path" "sources"
+ynh_backup_before_upgrade
 
 #=================================================
 # BACKUP NGINX CONFIGURATION
