@@ -29,7 +29,7 @@ path_url=$(ynh_normalize_url_path "$(ynh_app_setting_get "$app" path_url)")
 final_path=$(ynh_app_setting_get "$app" final_path)
 is_public=$(ynh_app_setting_get "$app" is_public)
 port=$(ynh_app_setting_get "$app" port)
-porti=port+42 # FIXME temporary test
+porti=$(ynh_app_setting_get "$app" porti)
 
 #=================================================
 # MANAGE SCRIPT FAILURE
